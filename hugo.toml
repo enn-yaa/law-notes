@@ -4,6 +4,7 @@ title = "法考笔记 · Enn-Yaa"
 theme = "LoveIt"
 enableRobotsTXT = true
 hasCJKLanguage = true
+
 [pagination]
   pagerSize = 10
 
@@ -14,18 +15,30 @@ hasCJKLanguage = true
 [params]
   description = "专注于法考笔记、真题解析、法律思维图谱整理"
   dateFormat = "2006-01-02"
-  defaultTheme = "auto" # light, dark, auto
-  enableShare = false
+  defaultTheme = "auto"
   enableToc = true
   enableReadingProgress = true
+  enableShare = false
+  homeFullContent = true
 
-# 评论系统（可选）
-[params.comment.giscus]
-  enable = false
+[params.search]
+  enable = true   # ✅ 启用搜索功能
 
-# -------------------------------
-# 导航菜单（法考八大学科 + 资料库）
-# -------------------------------
+[params.footer]
+  enable = true
+  since = 2022
+  author = "Enn-Yaa"
+  license = "CC BY-NC-SA 4.0"
+  icp = "©2025 Enn-Yaa"
+  hugo = true
+  theme = true
+
+[[menu.main]]
+  identifier = "home"
+  name = "首页"
+  url = "/"
+  weight = 0
+
 [[menu.main]]
   identifier = "civil"
   name = "民法"
