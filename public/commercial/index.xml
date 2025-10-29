@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commercials on 法考笔记 · Enn-Yaa</title>
+    <link>http://localhost:1313/commercial/</link>
+    <description>Recent content in Commercials on 法考笔记 · Enn-Yaa</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/commercial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>李建伟《公司法600问（上下册）》笔记</title>
+      <link>http://localhost:1313/commercial/gsf600/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/commercial/gsf600/</guid>
+      <description>&lt;h2 id=&#34;-图书简介&#34;&gt;📘 图书简介&lt;/h2&gt;&#xA;&lt;p&gt;李建伟老师从一个企业家、经理人的创业立场来观察公司法的运行，从一个商人的利益关切来解读公司法的实现，从一个商事律师的胜败视角来领会公司法的裁判。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
