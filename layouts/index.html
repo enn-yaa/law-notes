@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <h2 class="title">🧾 最近更新的法考笔记</h2>
+    <p class="subtitle">以下为最新发布的 10 篇内容，涵盖不同法学门类：</p>
+    <hr>
+
+    {{ range first 10 (where .Site.RegularPages "Type" "not in" (slice "page")) }}
+    <article class="post-preview">
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <small>{{ .Date.Format "2006-01-02" }} ｜ {{ .Section | humanize }}</small>
+      <p>{{ .Summary }}</p>
+    </article>
+    <hr>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -27,11 +27,10 @@ hasCJKLanguage = true
 [params.footer]
   enable = true
   since = 2022
-  author = "Enn-Yaa"
-  license = "CC BY-NC-SA 4.0"
-  icp = "©2025 Enn-Yaa"
-  hugo = true
-  theme = true
+  author = "xuufaa"
+  custom = "法考笔记 · xuufaa | 版权所有 ©2025 xuufaa | 采用 CC BY-NC-SA 4.0 协议"
+  hugo = false
+  theme = false
 
 [[menu.main]]
   identifier = "home"
@@ -98,3 +97,7 @@ hasCJKLanguage = true
   name = "资料库"
   url = "/pdfs/"
   weight = 10
+
+[params.header]
+  logoTitle = "法考笔记 · xuufaa"
+  logoHomeLink = "/"
