@@ -1,3 +1,5 @@
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
 baseURL = "https://law.xuufaa.com/"
 languageCode = "zh-cn"
 title = "法考笔记 · Enn-Yaa"
@@ -21,8 +23,18 @@ hasCJKLanguage = true
   enableShare = false
   homeFullContent = true
 
+[params.home]
+  enable = true
+  type = "post"
+  paginate = 10
+  showAllPosts = true
+  showRecent = true
+  showRecentCount = 10
+
 [params.search]
-  enable = true   # ✅ 启用搜索功能
+  enable = true
+  type = "lunr"
+  content = true
 
 [params.footer]
   enable = true
