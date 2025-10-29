@@ -1,0 +1,10 @@
+{{- $lang := .Type | default "plaintext" -}}
+{{- $code := .Inner | safeHTML -}}
+{{- $hl := .Options.highlight -}}
+
+<pre><code class="language-{{ $lang }}">{{ $code }}</code></pre>
+
+{{/* 防止主题调用不到模板时报错 */}}
+{{- define "_default/_markup/render-codeblock.html" -}}
+<pre><code class="language-{{ .Type }}">{{ .Inner | safeHTML }}</code></pre>
+{{- end -}}

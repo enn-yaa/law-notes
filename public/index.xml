@@ -1,0 +1,9 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>法考笔记 · Enn-Yaa</title>
+        <link>http://localhost:1313/</link>
+        <description>专注于法考笔记、真题解析、法律思维图谱整理</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 29 Oct 2025 10:16:06 &#43;0800</lastBuildDate>
+            <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+        </channel>
+</rss>

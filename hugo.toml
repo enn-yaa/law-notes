@@ -1,3 +1,87 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://law.xuufaa.com/"
+languageCode = "zh-cn"
+title = "法考笔记 · Enn-Yaa"
+theme = "LoveIt"
+enableRobotsTXT = true
+hasCJKLanguage = true
+[pagination]
+  pagerSize = 10
+
+[author]
+  name = "Enn-Yaa"
+  email = "vxxo@outlook.com"
+
+[params]
+  description = "专注于法考笔记、真题解析、法律思维图谱整理"
+  dateFormat = "2006-01-02"
+  defaultTheme = "auto" # light, dark, auto
+  enableShare = false
+  enableToc = true
+  enableReadingProgress = true
+
+# 评论系统（可选）
+[params.comment.giscus]
+  enable = false
+
+# -------------------------------
+# 导航菜单（法考八大学科 + 资料库）
+# -------------------------------
+[[menu.main]]
+  identifier = "civil"
+  name = "民法"
+  url = "/civil/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "criminal"
+  name = "刑法"
+  url = "/criminal/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "admin"
+  name = "行政法"
+  url = "/admin/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "civil-procedure"
+  name = "民诉法"
+  url = "/civil-procedure/"
+  weight = 4
+
+[[menu.main]]
+  identifier = "criminal-procedure"
+  name = "刑诉法"
+  url = "/criminal-procedure/"
+  weight = 5
+
+[[menu.main]]
+  identifier = "commercial"
+  name = "商经知"
+  url = "/commercial/"
+  weight = 6
+
+[[menu.main]]
+  identifier = "theory"
+  name = "理论法"
+  url = "/theory/"
+  weight = 7
+
+[[menu.main]]
+  identifier = "international"
+  name = "三国法"
+  url = "/international/"
+  weight = 8
+
+[[menu.main]]
+  identifier = "others"
+  name = "其他"
+  url = "/others/"
+  weight = 9
+
+[[menu.main]]
+  identifier = "pdfs"
+  name = "资料库"
+  url = "/pdfs/"
+  weight = 10
