@@ -1,0 +1,32 @@
+{{ if .Site.Params.search.enabled }}
+<div id="searchbox">
+  <input id="searchInput" type="text" placeholder="{{ .Site.Params.search.placeholder }}" />
+</div>
+<div id="searchResults"></div>
+
+<script src="{{ "fuse.min.js" | relURL }}"></script>
+<script src="{{ "en.search.min.js" | relURL }}"></script>
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const searchResults = document.getElementById("searchResults");
+  const fuseOptions = {
+    isCaseSensitive: false,
+    includeScore: true,
+    shouldSort: true,
+    threshold: 0.4,
+    keys: ["title", "summary", "content"],
+  };
+
+  fetch("{{ "index.json" | relURL }}")
+    .then(res => res.json())
+    .then(data => {
+      const fuse = new Fuse(data, fuseOptions);
+      searchInput.addEventListener("input", e => {
+        const results = fuse.search(e.target.value);
+        searchResults.innerHTML = results
+          .map(r => `<div><a href="${r.item.permalink}">${r.item.title}</a></div>`)
+          .join("");
+      });
+    });
+</script>
+{{ end }}
