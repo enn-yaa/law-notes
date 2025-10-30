@@ -1,22 +1,18 @@
 baseURL = "https://law.xuufaa.com/"
 languageCode = "zh-cn"
-title = "法考笔记 · Enn-Yaa"
+title = "法考笔记 · xuufaa"
 theme = "PaperMod"
-[pagination]
-  pagerSize = 10
 enableRobotsTXT = true
 hasCJKLanguage = true
 
-[params.author]
-  name = "Enn-Yaa"
-  email = "vxxo@outlook.com"
+[pagination]
+  pagerSize = 10
 
 [params]
-  env = "production"
-  title = "法考笔记 · Enn-Yaa"
+  # ---- 基础信息 ----
+  title = "法考笔记 · xuufaa"
   description = "专注于法考笔记、真题解析、法律思维图谱整理"
-  keywords = ["法考", "司法考试", "法律笔记", "Enn-Yaa", "law-notes"]
-  defaultTheme = "auto"
+  defaultTheme = "auto"  # 支持自动切换深浅模式
   disableThemeToggle = false
   ShowReadingTime = true
   ShowBreadCrumbs = true
@@ -26,29 +22,40 @@ hasCJKLanguage = true
   ShowShareButtons = false
   ShowCodeCopyButtons = true
 
+  # ---- 首页内容控制 ----
+  homeFullContent = false        # 首页仅显示摘要
+  ShowAllPostsOnHome = true      # 显示所有文章
+  paginate = 10                  # 首页显示 10 篇
+  ShowPostSummary = true         # 显示摘要而非全文
+
+  # ---- 首页标题文字 ----
   [params.homeInfoParams]
-    Title = "📚 法考笔记 · xuufaa"
-    Content = "收录民法、刑法、诉讼法、商经知等八科笔记与 PDF 资料，构建完整法考知识库。"
+    Title = "📚 最近更新的法考笔记"
+    Content = "以下为最近更新的 10 篇内容，涵盖民法、刑法、诉讼法、商经知、理论法等主要模块。"
 
-  [params.assets]
-    favicon = "favicon.ico"
-
+  # ---- 搜索功能 ----
   [params.search]
     enabled = true
-    engine = "fuse" # 支持 "fuse" 或 "lunr"
+    engine = "fuse"               # 支持 fuse 或 lunr
     placeholder = "搜索法考笔记…"
 
-  [params.profileMode]
-    enabled = false
-
+  # ---- 页脚 ----
   [params.footer]
     enable = true
     author = "xuufaa"
     text = "© 2022–2025 · CC BY-NC-SA 4.0 · 法考笔记 · xuufaa"
     position = "center"
 
+  # ---- 图标 ----
+  [params.assets]
+    favicon = "favicon.ico"
+
+  # ---- 个人信息卡（禁用） ----
+  [params.profileMode]
+    enabled = false
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON"]  # ✅ 必须保留 JSON，否则搜索无法工作
 
 [markup]
   [markup.highlight]
