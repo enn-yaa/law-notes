@@ -1,0 +1,48 @@
+{{ define "main" }}
+<main class="main" id="main-content">
+  <header class="page-header">
+    <h1>🔍 搜索</h1>
+  </header>
+
+  <section>
+    <input id="searchInput" type="search" placeholder="搜索法考笔记…" style="width:100%;padding:10px;font-size:1.1em;border:1px solid #ccc;border-radius:8px;">
+    <div id="searchResults" style="margin-top:20px;"></div>
+  </section>
+
+  <hr style="margin:30px 0;">
+
+  <section>
+    <h2>系列</h2>
+    {{ range $name, $taxonomy := .Site.Taxonomies.series }}
+      <a href="{{ "/series/" | relURL }}{{ $name | urlize }}" class="taxonomy-item">{{ $name }}</a>
+    {{ end }}
+
+    <h2>分类</h2>
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+      <a href="{{ "/categories/" | relURL }}{{ $name | urlize }}" class="taxonomy-item">{{ $name }}</a>
+    {{ end }}
+
+    <h2>标签</h2>
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+      <a href="{{ "/tags/" | relURL }}{{ $name | urlize }}" class="taxonomy-item">{{ $name }}</a>
+    {{ end }}
+  </section>
+</main>
+
+<script src="{{ "js/fuse.min.js" | relURL }}"></script>
+<script src="{{ "js/fastsearch.js" | relURL }}"></script>
+
+<style>
+.taxonomy-item {
+  display:inline-block;
+  margin:5px 8px;
+  padding:4px 10px;
+  border-radius:20px;
+  background:#f0f0f0;
+  text-decoration:none;
+  color:#222;
+  font-size:0.95em;
+}
+.taxonomy-item:hover { background:#ddd; }
+</style>
+{{ end }}

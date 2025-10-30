@@ -70,8 +70,8 @@ hasCJKLanguage = true
   weight = 1
 
 [[menu.main]]
-  name = "🔍 搜索"
-  url = "#searchbox"
+name = "搜索"
+  url = "/search/"
   weight = 2
 [[menu.main]]
   name = "民法"
