@@ -1,20 +1,30 @@
 #!/bin/bash
-# 一键 Hugo 构建 + 推送脚本
-# 适用于 https://github.com/enn-yaa/law-notes
+# ============ Hugo 一键部署脚本 (for law-notes) ============
+# 作者：xuufaa / Enn-Yaa
+# 功能：自动构建 Hugo 博客并推送到 GitHub main 分支
+# ============================================================
 
 set -e
 
-echo "🧹 清理旧的 public 文件夹..."
-rm -rf public
-
-echo "🏗️ 构建 Hugo 静态文件..."
+# 1️⃣ 构建站点
+echo "🧱 构建 Hugo 博客中..."
 hugo --cleanDestinationDir
 
-echo "📤 提交更改..."
-git add .
-git commit -m "auto: 更新 Hugo 博客 $(date '+%Y-%m-%d %H:%M:%S')" || true
+# 2️⃣ 检查是否有更改
+echo "🔍 检查 Git 状态..."
+if [[ -z $(git status --porcelain) ]]; then
+  echo "✅ 没有检测到更改，无需提交。"
+else
+  echo "📝 添加修改文件..."
+  git add .
 
-echo "🚀 推送到 GitHub..."
-git push https://enn-yaa@github.com/enn-yaa/law-notes.git main
+  # 自动生成提交信息（含时间戳）
+  commit_msg="update: 自动部署于 $(date '+%Y-%m-%d %H:%M:%S')"
+  git commit -m "$commit_msg"
 
-echo "✅ 已推送成功，可访问 👉 https://law.xuufaa.com/"
+  echo "📤 提交更改..."
+  git push origin main && echo "🚀 推送成功！"
+fi
+
+# 3️⃣ 结束信息
+echo "✅ 博客已更新并推送至 GitHub Pages 🎉"
