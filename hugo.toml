@@ -1,115 +1,107 @@
-disableKinds = ["taxonomy", "taxonomyTerm"]
-
 baseURL = "https://law.xuufaa.com/"
 languageCode = "zh-cn"
 title = "法考笔记 · Enn-Yaa"
-theme = "LoveIt"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 10
 enableRobotsTXT = true
 hasCJKLanguage = true
 
-[pagination]
-  pagerSize = 10
-
-[author]
+[params.author]
   name = "Enn-Yaa"
   email = "vxxo@outlook.com"
 
 [params]
+  env = "production"
+  title = "法考笔记 · Enn-Yaa"
   description = "专注于法考笔记、真题解析、法律思维图谱整理"
-  dateFormat = "2006-01-02"
+  keywords = ["法考", "司法考试", "法律笔记", "Enn-Yaa", "law-notes"]
   defaultTheme = "auto"
-  enableToc = true
-  enableReadingProgress = true
-  enableShare = false
-  homeFullContent = true
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowToc = true
+  comments = false
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
 
-[params.home]
-  enable = true
-  type = "post"
-  paginate = 10
-  showAllPosts = true
-  showRecent = true
-  showRecentCount = 10
+  [params.homeInfoParams]
+    Title = "📚 法考笔记 · xuufaa"
+    Content = "收录民法、刑法、诉讼法、商经知等八科笔记与 PDF 资料，构建完整法考知识库。"
 
-[params.search]
-  enable = true
-  type = "lunr"
-  content = true
+  [params.assets]
+    favicon = "favicon.ico"
 
-[params.footer]
-  enable = true
-  since = 2022
-  author = "xuufaa"
-  custom = "法考笔记 · xuufaa | 版权所有 ©2025 xuufaa | 采用 CC BY-NC-SA 4.0 协议"
-  hugo = false
-  theme = false
+  [params.search]
+    enabled = true
+    engine = "fuse" # 支持 "fuse" 或 "lunr"
+    placeholder = "搜索法考笔记…"
+
+  [params.profileMode]
+    enabled = false
+
+  [params.footer]
+    enable = true
+    author = "xuufaa"
+    text = "© 2022–2025 · CC BY-NC-SA 4.0 · 法考笔记 · xuufaa"
+    position = "center"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    unsafe = true
 
 [[menu.main]]
-  identifier = "home"
   name = "首页"
   url = "/"
-  weight = 0
-
-[[menu.main]]
-  identifier = "civil"
-  name = "民法"
-  url = "/civil/"
   weight = 1
 
 [[menu.main]]
-  identifier = "criminal"
-  name = "刑法"
-  url = "/criminal/"
+  name = "民法"
+  url = "/civil/"
   weight = 2
 
 [[menu.main]]
-  identifier = "admin"
-  name = "行政法"
-  url = "/admin/"
+  name = "刑法"
+  url = "/criminal/"
   weight = 3
 
 [[menu.main]]
-  identifier = "civil-procedure"
-  name = "民诉法"
-  url = "/civil-procedure/"
+  name = "行政法"
+  url = "/admin/"
   weight = 4
 
 [[menu.main]]
-  identifier = "criminal-procedure"
-  name = "刑诉法"
-  url = "/criminal-procedure/"
+  name = "民诉法"
+  url = "/civil-procedure/"
   weight = 5
 
 [[menu.main]]
-  identifier = "commercial"
-  name = "商经知"
-  url = "/commercial/"
+  name = "刑诉法"
+  url = "/criminal-procedure/"
   weight = 6
 
 [[menu.main]]
-  identifier = "theory"
-  name = "理论法"
-  url = "/theory/"
+  name = "商经知"
+  url = "/commercial/"
   weight = 7
 
 [[menu.main]]
-  identifier = "international"
-  name = "三国法"
-  url = "/international/"
+  name = "理论法"
+  url = "/theory/"
   weight = 8
 
 [[menu.main]]
-  identifier = "others"
-  name = "其他"
-  url = "/others/"
+  name = "三国法"
+  url = "/international/"
   weight = 9
 
 [[menu.main]]
-  identifier = "pdfs"
   name = "资料库"
   url = "/pdfs/"
   weight = 10
-
-[params.header]
-  logoTitle = "法考笔记 · xuufaa"
-  logoHomeLink = "/"
