@@ -1,32 +1,53 @@
 {{ if .Site.Params.search.enabled }}
-<div id="searchbox">
-  <input id="searchInput" type="text" placeholder="{{ .Site.Params.search.placeholder }}" />
+<!-- 🔍 搜索框（不会破坏导航栏布局） -->
+<div style="text-align:center; margin:2em 0;">
+  <input id="searchInput" type="text" placeholder="{{ .Site.Params.search.placeholder }}"
+    style="width:60%; max-width:400px; padding:0.5em; border-radius:5px; border:1px solid #ccc;" />
 </div>
-<div id="searchResults"></div>
 
+<div id="searchResults" style="text-align:left; margin:2em auto; width:90%; max-width:700px;"></div>
+
+<!-- 🚀 搜索脚本 -->
 <script src="{{ "fuse.min.js" | relURL }}"></script>
 <script src="{{ "en.search.min.js" | relURL }}"></script>
 <script>
-  const searchInput = document.getElementById("searchInput");
-  const searchResults = document.getElementById("searchResults");
-  const fuseOptions = {
-    isCaseSensitive: false,
-    includeScore: true,
-    shouldSort: true,
-    threshold: 0.4,
-    keys: ["title", "summary", "content"],
-  };
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("searchInput");
+    const searchResults = document.getElementById("searchResults");
 
-  fetch("{{ "index.json" | relURL }}")
-    .then(res => res.json())
-    .then(data => {
-      const fuse = new Fuse(data, fuseOptions);
-      searchInput.addEventListener("input", e => {
-        const results = fuse.search(e.target.value);
-        searchResults.innerHTML = results
-          .map(r => `<div><a href="${r.item.permalink}">${r.item.title}</a></div>`)
-          .join("");
-      });
-    });
+    if (!searchInput) return;
+
+    const fuseOptions = {
+      includeScore: true,
+      shouldSort: true,
+      threshold: 0.3,
+      keys: ["title", "summary", "content"]
+    };
+
+    fetch("{{ "index.json" | relURL }}")
+      .then(response => response.json())
+      .then(data => {
+        const fuse = new Fuse(data, fuseOptions);
+        searchInput.addEventListener("input", e => {
+          const query = e.target.value.trim();
+          if (!query) {
+            searchResults.innerHTML = "";
+            return;
+          }
+          const results = fuse.search(query);
+          if (results.length === 0) {
+            searchResults.innerHTML = "<p>未找到匹配内容。</p>";
+          } else {
+            searchResults.innerHTML = results.map(r =>
+              `<div style='margin-bottom:1em;'>
+                <a href='${r.item.permalink}' style='font-weight:bold;'>${r.item.title}</a>
+                <p>${r.item.summary || ""}</p>
+              </div>`
+            ).join("");
+          }
+        });
+      })
+      .catch(err => console.error("搜索加载错误：", err));
+  });
 </script>
 {{ end }}

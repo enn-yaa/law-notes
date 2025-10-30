@@ -70,49 +70,53 @@ hasCJKLanguage = true
   weight = 1
 
 [[menu.main]]
+  name = "🔍 搜索"
+  url = "#searchbox"
+  weight = 2
+[[menu.main]]
   name = "民法"
   url = "/civil/"
-  weight = 2
+  weight = 3
 
 [[menu.main]]
   name = "刑法"
   url = "/criminal/"
-  weight = 3
+  weight = 4
 
 [[menu.main]]
   name = "行政法"
   url = "/admin/"
-  weight = 4
+  weight = 5
 
 [[menu.main]]
   name = "民诉法"
   url = "/civil-procedure/"
-  weight = 5
+  weight = 6
 
 [[menu.main]]
   name = "刑诉法"
   url = "/criminal-procedure/"
-  weight = 6
+  weight = 7
 
 [[menu.main]]
   name = "商经知"
   url = "/commercial/"
-  weight = 7
+  weight = 8
 
 [[menu.main]]
   name = "理论法"
   url = "/theory/"
-  weight = 8
+  weight = 9
 
 [[menu.main]]
   name = "三国法"
   url = "/international/"
-  weight = 9
+  weight = 10
 
 [[menu.main]]
   name = "资料库"
   url = "/pdfs/"
-  weight = 10
+  weight = 12
 
 [[menu.main]]
   name = "其他"
