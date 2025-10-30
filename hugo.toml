@@ -55,7 +55,8 @@ hasCJKLanguage = true
     enabled = false
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]  # ✅ 必须保留 JSON，否则搜索无法工作
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
 
 [markup]
   [markup.highlight]
@@ -112,3 +113,9 @@ hasCJKLanguage = true
   name = "资料库"
   url = "/pdfs/"
   weight = 10
+
+[[menu.main]]
+  name = "其他"
+  url = "/others/"
+  weight = 11
+
