@@ -1,0 +1,18 @@
+/* 下拉菜单样式增强 */
+nav ul li ul {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* 鼠标悬停链接高亮 */
+nav ul li a:hover {
+  color: #007acc;
+  transition: 0.2s ease;
+}
+
+/* 可选：增加顶部导航栏间距和字体 */
+.navbar {
+  padding: 0.6rem 1rem;
+  font-weight: 500;
+}

@@ -64,6 +64,12 @@ hasCJKLanguage = true
   [markup.goldmark.renderer]
     unsafe = true
 
+  #视觉建议（更清晰的导航体验）
+[params.assets]
+  css = ["css/custom.css"]`
+
+### 一级导航 ###
+
 [[menu.main]]
   name = "首页"
   url = "/"
@@ -73,53 +79,89 @@ hasCJKLanguage = true
 name = "搜索"
   url = "/search/"
   weight = 2
-[[menu.main]]
-  name = "民法"
-  url = "/civil/"
-  weight = 3
 
-[[menu.main]]
-  name = "刑法"
-  url = "/criminal/"
-  weight = 4
+ [[menu.main]]
+    name = "法考"
+    identifier = "law"
+    weight = 3
 
-[[menu.main]]
-  name = "行政法"
-  url = "/admin/"
-  weight = 5
+  [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 4
 
-[[menu.main]]
-  name = "民诉法"
-  url = "/civil-procedure/"
-  weight = 6
+  [[menu.main]]
+    name = "图书推荐"
+    url = "/posts/books/"
+    weight = 5
 
-[[menu.main]]
-  name = "刑诉法"
-  url = "/criminal-procedure/"
-  weight = 7
+ [[menu.main]]
+    name = "My Digital Hub"
+    url = "/posts/my-digital-hub/"
+    weight = 6
 
-[[menu.main]]
-  name = "商经知"
-  url = "/commercial/"
-  weight = 8
+  [[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 7
 
-[[menu.main]]
-  name = "理论法"
-  url = "/theory/"
-  weight = 9
+### 二级导航（法考下属） ###
+  [[menu.main]]
+    parent = "law"
+    name = "民法"
+    url = "/posts/civil/"
+    weight = 1
 
-[[menu.main]]
-  name = "三国法"
-  url = "/international/"
-  weight = 10
+  [[menu.main]]
+    parent = "law"
+    name = "刑法"
+    url = "/posts/criminal/"
+    weight = 2
 
-[[menu.main]]
-  name = "资料库"
-  url = "/pdfs/"
-  weight = 12
+  [[menu.main]]
+    parent = "law"
+    name = "行政法"
+    url = "/posts/admin/"
+    weight = 3
 
-[[menu.main]]
-  name = "其他"
-  url = "/others/"
-  weight = 11
+  [[menu.main]]
+    parent = "law"
+    name = "民诉法"
+    url = "/posts/civil-procedure/"
+    weight = 4
 
+  [[menu.main]]
+    parent = "law"
+    name = "刑诉法"
+    url = "/posts/criminal-procedure/"
+    weight = 5
+
+  [[menu.main]]
+    parent = "law"
+    name = "商经知"
+    url = "/posts/commercial/"
+    weight = 6
+
+  [[menu.main]]
+    parent = "law"
+    name = "理论法"
+    url = "/posts/theory/"
+    weight = 7
+
+  [[menu.main]]
+    parent = "law"
+    name = "国际法"
+    url = "/posts/international/"
+    weight = 8
+
+  [[menu.main]]
+    parent = "law"
+    name = "PDF资料库 📂"
+    url = "/posts/pdfs-truepaper/"
+    weight = 9
+
+  [[menu.main]]
+    parent = "law"
+    name = "其他课程 📘"
+    url = "/posts/others-courses/"
+    weight = 10
