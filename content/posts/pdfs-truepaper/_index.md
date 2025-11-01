@@ -1,7 +1,7 @@
 cat > pdfs-truepaper/_index.md <<'EOF'
 ---
 title: "PDF资料库 📂"
-url: "/posts/pdfs-truepaper/"
+url: "/pdfs-truepaper/"
 date: 2025-11-01
 draft: false
 hidemeta: true

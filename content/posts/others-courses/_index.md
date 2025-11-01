@@ -1,7 +1,7 @@
 cat > others-courses/_index.md <<'EOF'
 ---
-title: "其他课程 📂"
-url: "/posts/others-courses/"
+title: "其他课程 📘"
+url: "/others-courses/"
 date: 2025-11-01
 draft: false
 hidemeta: true
