@@ -3,10 +3,6 @@ title: "法考笔记 📘"
 description: "系统整理法考八大学科核心笔记与真题资料"
 ---
 
-系统整理法考八大学科核心笔记与真题资料
-
----
-
 <div class="law-cards">
 
 <a class="law-item" href="/posts/civil/">📕 民法<br><span>总则、物权、合同、侵权、继承、婚姻家庭等核心考点</span></a>
