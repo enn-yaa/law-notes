@@ -1,15 +1,3 @@
----
-title: "法考笔记总览"
-description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论法、国际法等模块的学习笔记与真题整理。"
----
-
-欢迎来到 **法考笔记总览页** 📚  
-这里集中展示本站所有学科的入口与资源，方便快速导航。
-
----
-
-### 📖 八大学科
-
 <style>
 .subjects-container {
   display: grid;
@@ -47,51 +35,27 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
   background: rgba(0, 0, 0, 0.05);
 }
 
-/* 手机端：保持双列 + 加宽行距与字距 */
+/* 📱 手机端优化：缩小间距、减小卡片高度 */
 @media (max-width: 768px) {
   .subjects-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.8rem 2rem;
+    gap: 1rem 1.5rem;   /* 原1.8rem 2rem → 更紧凑 */
   }
   .subjects-container li {
-    font-size: 1.2rem;
-    padding: 1rem 0;
-    letter-spacing: 0.5em;
+    font-size: 1.15rem; /* 保持可读 */
+    padding: 0.6rem 0;  /* 原1rem → 更小 */
+    letter-spacing: 0.45em;
+    line-height: 1.9;   /* 让高度更紧凑 */
   }
 }
 
 /* 📂 资料与其他：电脑端正常，手机端/iPad 更宽松 */
 .posts-list li {
-  margin-bottom: 0.3rem; /* 默认紧凑 */
+  margin-bottom: 0.3rem;
 }
 @media (max-width: 768px) {
   .posts-list li {
-    margin-bottom: 0.9rem; /* 手机/iPad 更宽松 */
+    margin-bottom: 0.9rem;
   }
 }
 </style>
-
-<ul class="subjects-container">
-  <li><a href="/posts/criminal/">刑　法</a></li>
-  <li><a href="/posts/civil/">民　法</a></li>
-  <li><a href="/posts/criminal-procedure/">刑　诉　法</a></li>
-  <li><a href="/posts/civil-procedure/">民　诉　法</a></li>
-  <li><a href="/posts/theory/">法　理　学</a></li>
-  <li><a href="/posts/commercial/">商　经　知</a></li>
-  <li><a href="/posts/admin/">行　政　法</a></li>
-  <li><a href="/posts/international/">国　际　法</a></li>
-</ul>
-
----
-
-### 📂 资料与其他
-
-<ul class="posts-list">
-  <li>[PDF资料库 📂](/posts/pdfs-truepaper/)</li>
-  <li>[其他课程 📘](/posts/others-courses/)</li>
-</ul>
-
----
-
-> 💡 提示：  
-> 结构遵循“知识点 → 案例 → 真题”逻辑，可配合搜索功能快速定位。
