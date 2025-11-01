@@ -14,42 +14,47 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
 .subjects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.4rem 3rem; /* 上下间距、左右间距 */
+  gap: 1.4rem 3rem; /* 上下间距1.4rem，左右间距3rem */
   margin-top: 1.5rem;
   list-style: none;
   padding-left: 0;
+  text-align: center;
 }
 
 .subjects-container li {
-  font-size: 1.1rem;
-  line-height: 1.9;
-  padding: 0.5rem 0;
-  transition: background 0.3s, transform 0.2s;
+  font-size: 1.15rem;
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  letter-spacing: 0.4em;  /* 字间距加大 */
+  line-height: 2.2;       /* 行距更宽 */
+  padding: 0.6rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.subjects-container li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .subjects-container li:hover {
   background: rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
   transform: translateY(-2px);
-}
-
-##/* 手机端自动变为单列 */
-@media (max-width: 768px) {
-  .subjects-container {
-    grid-template-columns: 1fr;
-  }
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 </style>
 
 <ul class="subjects-container">
-  <li><a href="/posts/criminal/">刑法</a></li>
-  <li><a href="/posts/civil/">民法</a></li>
-  <li><a href="/posts/criminal-procedure/">刑诉法</a></li>
-  <li><a href="/posts/civil-procedure/">民诉法</a></li>
-  <li><a href="/posts/theory/">法理学</a></li>
-  <li><a href="/posts/commercial/">商经知</a></li>
-  <li><a href="/posts/admin/">行政法</a></li>
-  <li><a href="/posts/international/">国际法</a></li>
+  <li><a href="/posts/criminal/">刑　法</a></li>
+  <li><a href="/posts/civil/">民　法</a></li>
+  <li><a href="/posts/criminal-procedure/">刑　诉　法</a></li>
+  <li><a href="/posts/civil-procedure/">民　诉　法</a></li>
+  <li><a href="/posts/theory/">法　理　学</a></li>
+  <li><a href="/posts/commercial/">商　经　知</a></li>
+  <li><a href="/posts/admin/">行　政　法</a></li>
+  <li><a href="/posts/international/">国　际　法</a></li>
 </ul>
 
 ---
