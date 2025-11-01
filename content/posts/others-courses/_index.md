@@ -2,10 +2,7 @@ cat > others-courses/_index.md <<'EOF'
 ---
 title: "其他课程 📘"
 url: "/others-courses/"
-date: 2025-11-01
-draft: false
-hidemeta: true
-weight: 10
-description: "其他课程与拓展内容笔记"
+description: "拓展课程与延伸学习笔记"
+layout: "list"
 ---
-EOF
+汇集其他课程与拓展笔记，包含辅助教材、专题训练等内容。
