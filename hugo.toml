@@ -49,7 +49,7 @@ hasCJKLanguage = true
   # ---- 图标 ----
   [params.assets]
     favicon = "favicon.ico"
-
+    css = ["css/custom.css"]
   # ---- 个人信息卡（禁用） ----
   [params.profileMode]
     enabled = false
@@ -63,10 +63,6 @@ hasCJKLanguage = true
     style = "dracula"
   [markup.goldmark.renderer]
     unsafe = true
-
-  #视觉建议（更清晰的导航体验）
-[params.assets]
-  css = ["css/custom.css"]`
 
 ### 一级导航 ###
 
@@ -165,3 +161,4 @@ name = "搜索"
     name = "其他课程 📘"
     url = "/posts/others-courses/"
     weight = 10
+
