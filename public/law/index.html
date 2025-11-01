@@ -202,17 +202,19 @@
   background: rgba(0, 0, 0, 0.05);
 }
 
-/* 📱 手机端优化：缩小间距、减小卡片高度 */
+/* 📱 手机端优化：让卡片更紧凑、两列间距更小 */
 @media (max-width: 768px) {
   .subjects-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem 1.5rem;   /* 原1.8rem 2rem → 更紧凑 */
+    gap: 0.6rem 1rem;   /* 更紧凑：上下0.6rem，左右1rem */
+    margin-top: 1rem;   /* 减少上方空白 */
   }
   .subjects-container li {
-    font-size: 1.15rem; /* 保持可读 */
-    padding: 0.6rem 0;  /* 原1rem → 更小 */
-    letter-spacing: 0.45em;
-    line-height: 1.9;   /* 让高度更紧凑 */
+    font-size: 1.1rem;  /* 字体稍小以避免换行 */
+    padding: 0.45rem 0; /* 卡片高度再压缩一点 */
+    letter-spacing: 0.38em; /* 字间距微调 */
+    line-height: 1.7;   /* 调整整体高度 */
+    border-radius: 8px; /* 小屏视觉更柔和 */
   }
 }
 
