@@ -5,31 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>法考笔记 · xuufaa</title>
+<title>法考专题 | 法考笔记 · xuufaa</title>
 <meta name="keywords" content="">
-<meta name="description" content="/* === 法考目录卡片增强版=== */
-.law-list {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 1.5rem;
-margin-top: 2rem;
-animation: fadeContainer 0.4s ease-in;
-}
-/* 单个卡片 */
-.law-card {
-display: block;
-background: var(&ndash;entry);
-border-radius: 12px;
-padding: 1.2rem 1.4rem;
-box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-text-decoration: none;
-color: var(&ndash;primary);
-transition: all 0.25s ease;
-border: 1px solid rgba(0,0,0,0.04);
-opacity: 0;
-transform: translateY(20px);
-animation: fadeUp 0.8s ease forwards;
-}">
+<meta name="description" content="分学科查看法考笔记">
 <meta name="author" content="">
 <link rel="canonical" href="https://law.xuufaa.com/law/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
@@ -96,15 +74,13 @@ animation: fadeUp 0.8s ease forwards;
 </script><link rel="stylesheet" href="/css/custom.css">
 <meta property="og:url" content="https://law.xuufaa.com/law/">
   <meta property="og:site_name" content="法考笔记 · xuufaa">
-  <meta property="og:title" content="法考笔记 · xuufaa">
-  <meta property="og:description" content="/* === 法考目录卡片增强版=== */
-.law-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; animation: fadeContainer 0.4s ease-in; }
-/* 单个卡片 */ .law-card { display: block; background: var(–entry); border-radius: 12px; padding: 1.2rem 1.4rem; box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-decoration: none; color: var(–primary); transition: all 0.25s ease; border: 1px solid rgba(0,0,0,0.04); opacity: 0; transform: translateY(20px); animation: fadeUp 0.8s ease forwards; }">
+  <meta property="og:title" content="法考专题">
+  <meta property="og:description" content="分学科查看法考笔记">
   <meta property="og:locale" content="zh-cn">
   <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="专注于法考笔记、真题解析、法律思维图谱整理">
+<meta name="twitter:title" content="法考专题">
+<meta name="twitter:description" content="分学科查看法考笔记">
 
 
 <script type="application/ld+json">
@@ -115,7 +91,7 @@ animation: fadeUp 0.8s ease forwards;
     {
       "@type": "ListItem",
       "position":  1 ,
-      "name": "",
+      "name": "法考专题",
       "item": "https://law.xuufaa.com/law/"
     }
   ]
@@ -190,80 +166,48 @@ animation: fadeUp 0.8s ease forwards;
     </nav>
 </header>
 <main class="main"> 
-<div class="post-content"><p>/* === 法考目录卡片增强版=== */</p>
-<p>.law-list {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 1.5rem;
-margin-top: 2rem;
-animation: fadeContainer 0.4s ease-in;
-}</p>
-<p>/* 单个卡片 */
-.law-card {
-display: block;
-background: var(&ndash;entry);
-border-radius: 12px;
-padding: 1.2rem 1.4rem;
-box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-text-decoration: none;
-color: var(&ndash;primary);
-transition: all 0.25s ease;
-border: 1px solid rgba(0,0,0,0.04);
-opacity: 0;
-transform: translateY(20px);
-animation: fadeUp 0.8s ease forwards;
-}</p>
-<p>/* 悬浮浮动效果 */
-.law-card:hover {
-transform: translateY(-5px);
-box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-background: var(&ndash;theme);
-}</p>
-<p>/* 标题 */
-.law-title {
-font-size: 1.15rem;
-font-weight: 700;
-margin-bottom: 0.35rem;
-color: var(&ndash;primary);
-}</p>
-<p>/* 描述文字 */
-.law-desc {
-font-size: 0.9rem;
-color: var(&ndash;secondary);
-line-height: 1.5;
-}</p>
-<p>/* 渐入动画 */
-@keyframes fadeUp {
-from { opacity: 0; transform: translateY(20px); }
-to { opacity: 1; transform: translateY(0); }
-}</p>
-<p>@keyframes fadeContainer {
-from { opacity: 0; }
-to { opacity: 1; }
-}</p>
-<p>/* === 暗色模式适配 === */
-[data-theme=&ldquo;dark&rdquo;] .law-card {
-background: #1e1e1e;
-border: 1px solid #333;
-box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-}</p>
-<p>[data-theme=&ldquo;dark&rdquo;] .law-card:hover {
-background: #262626;
-box-shadow: 0 6px 16px rgba(80,150,255,0.25);
-}</p>
-<p>/* === 平板和手机布局优化 === */
-@media (max-width: 1024px) {
-.law-list {
-grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-gap: 1rem;
-}
-}</p>
-<p>@media (max-width: 600px) {
-.law-card {
-padding: 1rem 1.1rem;
-font-size: 1rem;
-}
-}</p>
+<header class="page-header"><div class="breadcrumbs"><a href="https://law.xuufaa.com/">Home</a></div>
+  <h1>
+    法考专题
+  </h1>
+  <div class="post-description">
+    分学科查看法考笔记
+  </div>
+</header>
+<div class="post-content"><div class="law-list">
+<a href="/posts/theory/" class="law-card">
+  <div class="law-title">法理学</div>
+  <div class="law-desc">探讨法律本质、价值与逻辑，理解法学思维与社会结构。</div>
+</a>
+<a href="/posts/constitution/" class="law-card">
+  <div class="law-title">宪法</div>
+  <div class="law-desc">国家基本制度、公民权利与义务、国家机构运行框架。</div>
+</a>
+<a href="/posts/civil/" class="law-card">
+  <div class="law-title">民法</div>
+  <div class="law-desc">民法总则、物权、合同、婚姻继承等重点条文与案例。</div>
+</a>
+<a href="/posts/commercial/" class="law-card">
+  <div class="law-title">商法与公司法</div>
+  <div class="law-desc">精要、商事主体与企业实务。</div>
+</a>
+<a href="/posts/criminal/" class="law-card">
+  <div class="law-title">刑法</div>
+  <div class="law-desc">总则与分则核心罪名、行为评价与刑罚适用。</div>
+</a>
+<a href="/posts/administrative/" class="law-card">
+  <div class="law-title">行政法与行政诉讼法</div>
+  <div class="law-desc">行政行为、复议与诉讼程序逻辑，掌握权力边界。</div>
+</a>
+<a href="/posts/civil-procedure/" class="law-card">
+  <div class="law-title">民事诉讼法</div>
+  <div class="law-desc">诉讼原则、证据规则、程序制度及审判实务。</div>
+</a>
+<a href="/posts/international/" class="law-card">
+  <div class="law-title">国际法</div>
+  <div class="law-desc">国际公法、国际私法与涉外法律关系的考点整理。</div>
+</a>
+</div>
 
 
 </div>

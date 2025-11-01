@@ -1,85 +1,48 @@
-/* === 法考目录卡片增强版=== */
+---
+title: "法考专题"
+description: "分学科查看法考笔记"
+---
 
-.law-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-  animation: fadeContainer 0.4s ease-in;
-}
+<div class="law-list">
 
-/* 单个卡片 */
-.law-card {
-  display: block;
-  background: var(--entry);
-  border-radius: 12px;
-  padding: 1.2rem 1.4rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  text-decoration: none;
-  color: var(--primary);
-  transition: all 0.25s ease;
-  border: 1px solid rgba(0,0,0,0.04);
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.8s ease forwards;
-}
+<a href="/posts/theory/" class="law-card">
+  <div class="law-title">法理学</div>
+  <div class="law-desc">探讨法律本质、价值与逻辑，理解法学思维与社会结构。</div>
+</a>
 
-/* 悬浮浮动效果 */
-.law-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-  background: var(--theme);
-}
+<a href="/posts/constitution/" class="law-card">
+  <div class="law-title">宪法</div>
+  <div class="law-desc">国家基本制度、公民权利与义务、国家机构运行框架。</div>
+</a>
 
-/* 标题 */
-.law-title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 0.35rem;
-  color: var(--primary);
-}
+<a href="/posts/civil/" class="law-card">
+  <div class="law-title">民法</div>
+  <div class="law-desc">民法总则、物权、合同、婚姻继承等重点条文与案例。</div>
+</a>
 
-/* 描述文字 */
-.law-desc {
-  font-size: 0.9rem;
-  color: var(--secondary);
-  line-height: 1.5;
-}
+<a href="/posts/commercial/" class="law-card">
+  <div class="law-title">商法与公司法</div>
+  <div class="law-desc">精要、商事主体与企业实务。</div>
+</a>
 
-/* 渐入动画 */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+<a href="/posts/criminal/" class="law-card">
+  <div class="law-title">刑法</div>
+  <div class="law-desc">总则与分则核心罪名、行为评价与刑罚适用。</div>
+</a>
 
-@keyframes fadeContainer {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+<a href="/posts/administrative/" class="law-card">
+  <div class="law-title">行政法与行政诉讼法</div>
+  <div class="law-desc">行政行为、复议与诉讼程序逻辑，掌握权力边界。</div>
+</a>
 
-/* === 暗色模式适配 === */
-[data-theme="dark"] .law-card {
-  background: #1e1e1e;
-  border: 1px solid #333;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-}
+<a href="/posts/civil-procedure/" class="law-card">
+  <div class="law-title">民事诉讼法</div>
+  <div class="law-desc">诉讼原则、证据规则、程序制度及审判实务。</div>
+</a>
 
-[data-theme="dark"] .law-card:hover {
-  background: #262626;
-  box-shadow: 0 6px 16px rgba(80,150,255,0.25);
-}
+<a href="/posts/international/" class="law-card">
+  <div class="law-title">国际法</div>
+  <div class="law-desc">国际公法、国际私法与涉外法律关系的考点整理。</div>
+</a>
 
-/* === 平板和手机布局优化 === */
-@media (max-width: 1024px) {
-  .law-list {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .law-card {
-    padding: 1rem 1.1rem;
-    font-size: 1rem;
-  }
-}
+</div>

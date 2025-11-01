@@ -66,26 +66,80 @@ nav ul li a:hover {
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+/* === 法考目录卡片增强版 · xuufaa === */
+
+/* 卡片容器布局 */
+.law-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  animation: fadeContainer 0.5s ease-in-out;
+}
+
+/* 单个卡片基础样式 */
+.law-card {
+  display: block;
+  background: var(--entry);
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-decoration: none;
+  color: var(--primary);
+  border: 1px solid rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* 悬浮浮动与光影 */
+.law-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+  background: var(--theme);
+}
+
+/* 标题 */
+.law-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: var(--primary);
+}
+
+/* 描述文字 */
+.law-desc {
+  font-size: 0.95rem;
+  color: var(--secondary);
+  line-height: 1.55;
+}
+
+/* 动画 */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeContainer {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* === 暗色模式适配 === */
+/* 暗色模式适配 */
 [data-theme="dark"] .law-card {
-  background: #1e1e1e;
+  background: #1d1d1d;
   border: 1px solid #333;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 [data-theme="dark"] .law-card:hover {
   background: #262626;
-  box-shadow: 0 6px 16px rgba(80,150,255,0.25);
+  box-shadow: 0 8px 18px rgba(80,150,255,0.25);
 }
 
-/* === 平板和手机布局优化 === */
+/* 平板与手机端优化 */
 @media (max-width: 1024px) {
   .law-list {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -95,7 +149,9 @@ nav ul li a:hover {
 
 @media (max-width: 600px) {
   .law-card {
-    padding: 1rem 1.1rem;
+    padding: 1rem 1.2rem;
     font-size: 1rem;
   }
+  .law-title { font-size: 1.05rem; }
+  .law-desc { font-size: 0.9rem; }
 }
