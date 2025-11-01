@@ -83,8 +83,8 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
 ### 📂 资料与其他
 
 <ul class="posts-list">
-  <li>[PDF资料库 📂](/pdfs-truepaper/)</li>
-  <li>[其他课程 📘](/others-courses/)</li>
+  <li><a href="/pdfs-truepaper/">PDF资料库 📂</a></li>
+  <li><a href="/others-courses/">其他课程 📘</a></li>
 </ul>
 ---
 
