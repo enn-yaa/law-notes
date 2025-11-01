@@ -14,7 +14,7 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
 .subjects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem 3rem; /* 上下间距略增 */
+  gap: 1.6rem 3rem;
   margin-top: 1.6rem;
   list-style: none;
   padding-left: 0;
@@ -29,11 +29,11 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
   padding: 0.7rem 0;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 10px;
-  transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 .subjects-container li a {
@@ -45,30 +45,29 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
 
 .subjects-container li:hover {
   background: rgba(0, 0, 0, 0.05);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
-/* 手机端优化 */
+/* 手机端：保持双列 + 加宽行距与字距 */
 @media (max-width: 768px) {
   .subjects-container {
-    grid-template-columns: repeat(2, 1fr); /* 保持两列 */
-    gap: 1.8rem 2rem; /* 增大学科间距 */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem 2rem;
   }
   .subjects-container li {
     font-size: 1.2rem;
     padding: 1rem 0;
-    letter-spacing: 0.5em; /* 增加字间距 */
+    letter-spacing: 0.5em;
   }
 }
 
-/* 调整“资料与其他”区块行距 */
-.posts-list {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+/* 📂 资料与其他：电脑端正常，手机端/iPad 更宽松 */
 .posts-list li {
-  margin-bottom: 0.8rem; /* 增大每行间距 */
+  margin-bottom: 0.3rem; /* 默认紧凑 */
+}
+@media (max-width: 768px) {
+  .posts-list li {
+    margin-bottom: 0.9rem; /* 手机/iPad 更宽松 */
+  }
 }
 </style>
 
