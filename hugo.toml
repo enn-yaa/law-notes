@@ -50,6 +50,7 @@ hasCJKLanguage = true
   [params.assets]
     favicon = "favicon.ico"
     css = ["css/custom.css"]
+    customCSS = ["css/custom.css"]
   # ---- 个人信息卡（禁用） ----
   [params.profileMode]
     enabled = false
