@@ -1,32 +1,69 @@
 ---
-title: "法考笔记总览"
-description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论法、国际法等模块的学习笔记与真题整理。"
+title: "法考笔记 · xuufaa"
+description: "系统整理法考八大学科核心笔记与真题资料"
 ---
 
-欢迎来到 **法考笔记总览页** 📚  
-这里集中展示本站所有学科的入口与资源，方便快速导航。
-
----
-
-### 📖 八大学科
-
-- [民法](/posts/civil/)
-- [刑法](/posts/criminal/)
-- [行政法](/posts/admin/)
-- [民诉法](/posts/civil-procedure/)
-- [刑诉法](/posts/criminal-procedure/)
-- [商经知](/posts/commercial/)
-- [理论法](/posts/theory/)
-- [国际法](/posts/international/)
+# 法考笔记 📘
+系统整理法考八大学科核心笔记与真题资料
 
 ---
 
-### 📂 资料与其他
+<div class="law-grid">
 
-- [PDF资料库 📂](/posts/pdfs-truepaper/)
-- [其他课程 📘](/posts/others-courses/)
+<div class="law-card">
+<a href="/posts/civil/">📕 民法</a>
+<p>总则、物权、合同、侵权、继承、婚姻家庭等核心考点。</p>
+</div>
+
+<div class="law-card">
+<a href="/posts/criminal/">⚖️ 刑法</a>
+<p>分则罪名精讲、刑罚适用与常见真题解析。</p>
+</div>
+
+<div class="law-card">
+<a href="/posts/admin/">🏛️ 行政法</a>
+<p>行政行为、行政复议与诉讼制度精要。</p>
+</div>
+
+<div class="law-card">
+<a href="/posts/civil-procedure/">📰 民诉法</a>
+<p>民事诉讼程序要点、执行与案例分析。</p>
+</div>
+
+<div class="law-card">
+<a href="/posts/criminal-procedure/">🔍 刑诉法</a>
+<p>侦查、公诉、审判与程序正义框架梳理。</p>
+</div>
+
+<div class="law-card">
+<a href="/posts/commercial/">💼 商经知</a>
+<p>公司法、票据法、保险法、知识产权与商事案例。</p>
+</div>
+
+<div class="law-card">
+<a href="/posts/theory/">📚 理论法</a>
+<p>法理学、宪法原理、法学方法论。</p>
+</div>
+
+<div class="law-card">
+<a href="/posts/international/">🌏 国际法</a>
+<p>国际法、国际私法、国际经济法要点汇总。</p>
+</div>
+
+<div class="law-card">
+<a href="/posts/pdfs-truepaper/">📂 PDF资料库</a>
+<p>讲义、真题卷与历年参考资料下载。</p>
+</div>
+
+<div class="law-card">
+<a href="/posts/others-courses/">🧭 其他课程</a>
+<p>拓展课程与综合内容笔记整理。</p>
+</div>
+
+</div>
 
 ---
 
 > 💡 提示：  
-> 各笔记整理自瑞达法考课程与真题，结构遵循“知识点 → 案例 → 真题”逻辑，可配合搜索功能快速定位。
+>  
+> 可使用顶部搜索栏快速定位关键词。

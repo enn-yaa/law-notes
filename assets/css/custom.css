@@ -16,3 +16,43 @@ nav ul li a:hover {
   padding: 0.6rem 1rem;
   font-weight: 500;
 }
+
+/* ---- 法考总览卡片布局 ---- */
+.law-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.law-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  padding: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.law-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.law-card a {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #007acc;
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+}
+
+.law-card a:hover {
+  color: #005fa3;
+}
+
+.law-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #444;
+}
