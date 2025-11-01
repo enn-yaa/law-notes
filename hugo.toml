@@ -162,3 +162,8 @@ name = "搜索"
     url = "/posts/others-courses/"
     weight = 10
 
+baseURL = "https://law888.xuufaa.com/"
+languageCode = "zh-cn"
+title = "法考笔记 · law888"
+theme = "PaperMod"
+
