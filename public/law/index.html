@@ -178,15 +178,45 @@
 这里集中展示本站所有学科的入口与资源，方便快速导航。</p>
 <hr>
 <h3 id="-八大学科">📖 八大学科<a hidden class="anchor" aria-hidden="true" href="#-八大学科">#</a></h3>
-<ul>
-<li><a href="/posts/civil/">民法</a></li>
-<li><a href="/posts/criminal/">刑法</a></li>
-<li><a href="/posts/admin/">行政法</a></li>
-<li><a href="/posts/civil-procedure/">民诉法</a></li>
-<li><a href="/posts/criminal-procedure/">刑诉法</a></li>
-<li><a href="/posts/commercial/">商经知</a></li>
-<li><a href="/posts/theory/">理论法</a></li>
-<li><a href="/posts/international/">国际法</a></li>
+<style>
+.subjects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem 3rem; /* 上下间距、左右间距 */
+  margin-top: 1.5rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.subjects-container li {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  padding: 0.5rem 0;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.subjects-container li:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  transform: translateY(-2px);
+}
+
+/* 手机端自动变为单列 */
+@media (max-width: 768px) {
+  .subjects-container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+<ul class="subjects-container">
+  <li><a href="/posts/criminal/">刑法</a></li>
+  <li><a href="/posts/civil/">民法</a></li>
+  <li><a href="/posts/criminal-procedure/">刑诉法</a></li>
+  <li><a href="/posts/civil-procedure/">民诉法</a></li>
+  <li><a href="/posts/theory/">法理学</a></li>
+  <li><a href="/posts/commercial/">商经知</a></li>
+  <li><a href="/posts/admin/">行政法</a></li>
+  <li><a href="/posts/international/">国际法</a></li>
 </ul>
 <hr>
 <h3 id="-资料与其他">📂 资料与其他<a hidden class="anchor" aria-hidden="true" href="#-资料与其他">#</a></h3>

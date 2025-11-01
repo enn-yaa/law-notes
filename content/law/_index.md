@@ -10,14 +10,47 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
 
 ### 📖 八大学科
 
-- [民法](/posts/civil/)
-- [刑法](/posts/criminal/)
-- [行政法](/posts/admin/)
-- [民诉法](/posts/civil-procedure/)
-- [刑诉法](/posts/criminal-procedure/)
-- [商经知](/posts/commercial/)
-- [理论法](/posts/theory/)
-- [国际法](/posts/international/)
+<style>
+.subjects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem 3rem; /* 上下间距、左右间距 */
+  margin-top: 1.5rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.subjects-container li {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  padding: 0.5rem 0;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.subjects-container li:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  transform: translateY(-2px);
+}
+
+/* 手机端自动变为单列 */
+@media (max-width: 768px) {
+  .subjects-container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<ul class="subjects-container">
+  <li><a href="/posts/criminal/">刑法</a></li>
+  <li><a href="/posts/civil/">民法</a></li>
+  <li><a href="/posts/criminal-procedure/">刑诉法</a></li>
+  <li><a href="/posts/civil-procedure/">民诉法</a></li>
+  <li><a href="/posts/theory/">法理学</a></li>
+  <li><a href="/posts/commercial/">商经知</a></li>
+  <li><a href="/posts/admin/">行政法</a></li>
+  <li><a href="/posts/international/">国际法</a></li>
+</ul>
 
 ---
 
