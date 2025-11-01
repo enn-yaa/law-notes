@@ -1,58 +1,85 @@
----
-title: "法考笔记 📘"
-description: "系统整理法考八大学科核心笔记与真题资料"
----
+/* === 法考目录卡片增强版=== */
 
-<div class="law-list">
+.law-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  animation: fadeContainer 0.4s ease-in;
+}
 
-<a class="law-card" href="/posts/civil/">
-  <div class="law-title">📕 民法</div>
-  <div class="law-desc">总则、物权、合同、侵权、继承、婚姻家庭等核心考点</div>
-</a>
+/* 单个卡片 */
+.law-card {
+  display: block;
+  background: var(--entry);
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-decoration: none;
+  color: var(--primary);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
 
-<a class="law-card" href="/posts/criminal/">
-  <div class="law-title">⚖️ 刑法</div>
-  <div class="law-desc">分则罪名精讲、刑罚适用与真题解析</div>
-</a>
+/* 悬浮浮动效果 */
+.law-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  background: var(--theme);
+}
 
-<a class="law-card" href="/posts/admin/">
-  <div class="law-title">🏛️ 行政法</div>
-  <div class="law-desc">行政行为、行政复议与诉讼制度精要</div>
-</a>
+/* 标题 */
+.law-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--primary);
+}
 
-<a class="law-card" href="/posts/civil-procedure/">
-  <div class="law-title">📰 民诉法</div>
-  <div class="law-desc">诉讼程序要点、执行与案例分析</div>
-</a>
+/* 描述文字 */
+.law-desc {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  line-height: 1.5;
+}
 
-<a class="law-card" href="/posts/criminal-procedure/">
-  <div class="law-title">🔍 刑诉法</div>
-  <div class="law-desc">侦查、公诉、审判与程序正义</div>
-</a>
+/* 渐入动画 */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-<a class="law-card" href="/posts/commercial/">
-  <div class="law-title">💼 商经知</div>
-  <div class="law-desc">公司法、票据法、保险法、知识产权等</div>
-</a>
+@keyframes fadeContainer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
-<a class="law-card" href="/posts/theory/">
-  <div class="law-title">📚 理论法</div>
-  <div class="law-desc">法理学、宪法原理与法学方法论</div>
-</a>
+/* === 暗色模式适配 === */
+[data-theme="dark"] .law-card {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
 
-<a class="law-card" href="/posts/international/">
-  <div class="law-title">🌏 国际法</div>
-  <div class="law-desc">国际法、国际私法与国际经济法</div>
-</a>
+[data-theme="dark"] .law-card:hover {
+  background: #262626;
+  box-shadow: 0 6px 16px rgba(80,150,255,0.25);
+}
 
-<a class="law-card" href="/posts/pdfs-truepaper/">
-  <div class="law-title">📂 PDF资料库</div>
-  <div class="law-desc">讲义、真题卷、历年参考资料</div>
-</a>
+/* === 平板和手机布局优化 === */
+@media (max-width: 1024px) {
+  .law-list {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+}
 
-<a class="law-card" href="/posts/others-courses/">
-  <div class="law-title">🧭 其他课程</div>
-  <div class="law-desc">拓展课程与综合笔记整理</div>
-</a>
-
-</div>
+@media (max-width: 600px) {
+  .law-card {
+    padding: 1rem 1.1rem;
+    font-size: 1rem;
+  }
+}
