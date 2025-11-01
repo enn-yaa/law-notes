@@ -14,8 +14,8 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
 .subjects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.4rem 3rem; /* 上下间距1.4rem，左右间距3rem */
-  margin-top: 1.5rem;
+  gap: 1.6rem 3rem; /* 上下间距略增 */
+  margin-top: 1.6rem;
   list-style: none;
   padding-left: 0;
   text-align: center;
@@ -24,18 +24,22 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
 .subjects-container li {
   font-size: 1.15rem;
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-  letter-spacing: 0.4em;  /* 字间距加大 */
-  line-height: 2.2;       /* 行距更宽 */
-  padding: 0.6rem 0;
+  letter-spacing: 0.4em;
+  line-height: 2.2;
+  padding: 0.7rem 0;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subjects-container li a {
   text-decoration: none;
   color: inherit;
+  width: 100%;
   display: block;
 }
 
@@ -43,6 +47,28 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
   background: rgba(0, 0, 0, 0.05);
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* 手机端优化 */
+@media (max-width: 768px) {
+  .subjects-container {
+    grid-template-columns: repeat(2, 1fr); /* 保持两列 */
+    gap: 1.8rem 2rem; /* 增大学科间距 */
+  }
+  .subjects-container li {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    letter-spacing: 0.5em; /* 增加字间距 */
+  }
+}
+
+/* 调整“资料与其他”区块行距 */
+.posts-list {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.posts-list li {
+  margin-bottom: 0.8rem; /* 增大每行间距 */
 }
 </style>
 
@@ -61,8 +87,10 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
 
 ### 📂 资料与其他
 
-- [PDF资料库 📂](/posts/pdfs-truepaper/)
-- [其他课程 📘](/posts/others-courses/)
+<ul class="posts-list">
+  <li>[PDF资料库 📂](/posts/pdfs-truepaper/)</li>
+  <li>[其他课程 📘](/posts/others-courses/)</li>
+</ul>
 
 ---
 
