@@ -33,7 +33,7 @@ description: "涵盖民法、刑法、行政法、诉讼法、商经知、理论
   transform: translateY(-2px);
 }
 
-/* 手机端自动变为单列 */
+##/* 手机端自动变为单列 */
 @media (max-width: 768px) {
   .subjects-container {
     grid-template-columns: 1fr;
