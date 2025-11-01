@@ -1,6 +1,9 @@
 ---
 title: "法考专题"
 description: "分学科查看法考笔记"
+_build:
+  list: never
+  render: always
 ---
 
 <div class="law-list">
