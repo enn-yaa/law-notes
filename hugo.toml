@@ -43,7 +43,7 @@ hasCJKLanguage = true
   [params.footer]
     enable = true
     author = "xuufaa"
-    text = "© 2025–2026 · CC BY-NC-SA 4.0 · 法考笔记 · xuufaa"
+    text = "© 2025–2026 · CC BY-NC-SA 4.0 "
     position = "center"
 
   # ---- 图标 ----
