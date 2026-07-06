@@ -43,7 +43,7 @@ hasCJKLanguage = true
   [params.footer]
     enable = true
     author = "xuufaa"
-    text = "© 2022–2025 · CC BY-NC-SA 4.0 · 法考笔记 · xuufaa"
+    text = "© 2025–2026 · CC BY-NC-SA 4.0 · 法考笔记 · xuufaa"
     position = "center"
 
   # ---- 图标 ----
@@ -163,7 +163,7 @@ name = "搜索"
     url = "/posts/others-courses/"
     weight = 10
 
-baseURL = "https://law888.xuufaa.com/"
+baseURL = "https://law.xuufaa.com/"
 languageCode = "zh-cn"
 title = "法考笔记 · law888"
 theme = "PaperMod"
