@@ -1,6 +1,6 @@
 baseURL = "https://law.xuufaa.com/"
 languageCode = "zh-cn"
-title = "法考笔记 · xuufaa"
+title = "xuufaa· 博客"
 theme = "PaperMod"
 enableRobotsTXT = true
 hasCJKLanguage = true
@@ -10,7 +10,7 @@ hasCJKLanguage = true
 
 [params]
   # ---- 基础信息 ----
-  title = "法考笔记 · xuufaa"
+  title = "xuufaa"
   description = "专注于法考笔记、真题解析、法律思维图谱整理"
   defaultTheme = "auto"  # 支持自动切换深浅模式
   disableThemeToggle = false
@@ -30,14 +30,14 @@ hasCJKLanguage = true
 
   # ---- 首页标题文字 ----
   [params.homeInfoParams]
-    Title = "📚 最近更新的法考笔记"
-    Content = "以下为最近更新的 10 篇内容，涵盖民法、刑法、诉讼法、商经知、理论法等主要模块。"
+    Title = "📚 最近更新的博客"
+    Content = "以下为最近更新的 10 篇博客内容，涵盖民法、刑法、诉讼法、商经知、理论法等主要模块。"
 
   # ---- 搜索功能 ----
   [params.search]
     enabled = true
     engine = "fuse"               # 支持 fuse 或 lunr
-    placeholder = "搜索法考笔记…"
+    placeholder = "搜索博客内容…"
 
   # ---- 页脚 ----
   [params.footer]
@@ -165,6 +165,6 @@ name = "搜索"
 
 baseURL = "https://law.xuufaa.com/"
 languageCode = "zh-cn"
-title = "法考笔记 · law888"
+title = "博客 · law"
 theme = "PaperMod"
 
