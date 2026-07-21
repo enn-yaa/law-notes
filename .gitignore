@@ -1,1 +1,5 @@
 .DS_Store
+
+# Hugo generated files
+public/
+resources/
