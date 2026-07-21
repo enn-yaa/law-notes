@@ -42,3 +42,104 @@ style = "dracula"
 
 [markup.goldmark.renderer]
 unsafe = true
+
+# 一级导航
+
+[[menu.main]]
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "搜索"
+  url = "/search/"
+  weight = 2
+
+[[menu.main]]
+  name = "法考"
+  identifier = "law"
+  url = "/law/"
+  weight = 3
+
+[[menu.main]]
+  name = "标签"
+  url = "/tags/"
+  weight = 4
+
+[[menu.main]]
+  name = "图书推荐"
+  url = "/posts/books/"
+  weight = 5
+
+[[menu.main]]
+  name = "My Digital Hub"
+  url = "/posts/my-digital-hub/"
+  weight = 6
+
+[[menu.main]]
+  name = "关于"
+  url = "/about/"
+  weight = 7
+
+
+# 法考子菜单
+
+[[menu.main]]
+  parent = "law"
+  name = "民法"
+  url = "/posts/civil/"
+  weight = 1
+
+[[menu.main]]
+  parent = "law"
+  name = "刑法"
+  url = "/posts/criminal/"
+  weight = 2
+
+[[menu.main]]
+  parent = "law"
+  name = "行政法"
+  url = "/posts/admin/"
+  weight = 3
+
+[[menu.main]]
+  parent = "law"
+  name = "民诉法"
+  url = "/posts/civil-procedure/"
+  weight = 4
+
+[[menu.main]]
+  parent = "law"
+  name = "刑诉法"
+  url = "/posts/criminal-procedure/"
+  weight = 5
+
+[[menu.main]]
+  parent = "law"
+  name = "商经知"
+  url = "/posts/commercial/"
+  weight = 6
+
+[[menu.main]]
+  parent = "law"
+  name = "理论法"
+  url = "/posts/theory/"
+  weight = 7
+
+[[menu.main]]
+  parent = "law"
+  name = "国际法"
+  url = "/posts/international/"
+  weight = 8
+
+[[menu.main]]
+  parent = "law"
+  name = "PDF资料库 📂"
+  url = "/posts/pdfs-truepaper/"
+  weight = 9
+
+[[menu.main]]
+  parent = "law"
+  name = "其他课程 📘"
+  url = "/posts/others-courses/"
+  weight = 10
