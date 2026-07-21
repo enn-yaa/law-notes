@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>法考笔记 📒 on 法考笔记 · xuufaa</title>
-    <link>https://law.xuufaa.com/posts/</link>
-    <description>Recent content in 法考笔记 📒 on 法考笔记 · xuufaa</description>
+    <title>法考笔记 📒 on xuufaa· 博客</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in 法考笔记 📒 on xuufaa· 博客</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 01 Nov 2025 22:31:38 +0800</lastBuildDate>
-    <atom:link href="https://law.xuufaa.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>写一篇法考日记-万圣节🎃</title>
-      <link>https://law.xuufaa.com/posts/others-courses/20251101-2231-others-courses-post/</link>
+      <link>http://localhost:1313/posts/others-courses/20251101-2231-others-courses-post/</link>
       <pubDate>Sat, 01 Nov 2025 22:31:38 +0800</pubDate>
-      <guid>https://law.xuufaa.com/posts/others-courses/20251101-2231-others-courses-post/</guid>
+      <guid>http://localhost:1313/posts/others-courses/20251101-2231-others-courses-post/</guid>
       <description>简短说明，如：写一篇法考日记-万圣节🎃精要整理</description>
     </item>
   </channel>

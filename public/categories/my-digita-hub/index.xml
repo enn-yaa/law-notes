@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My-Digita-Hub on 法考笔记 · xuufaa</title>
-    <link>https://law.xuufaa.com/categories/my-digita-hub/</link>
-    <description>Recent content in My-Digita-Hub on 法考笔记 · xuufaa</description>
+    <title>My-Digita-Hub on xuufaa· 博客</title>
+    <link>http://localhost:1313/categories/my-digita-hub/</link>
+    <description>Recent content in My-Digita-Hub on xuufaa· 博客</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 01 Nov 2025 22:49:22 +0800</lastBuildDate>
-    <atom:link href="https://law.xuufaa.com/categories/my-digita-hub/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/my-digita-hub/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>万圣节看</title>
-      <link>https://law.xuufaa.com/posts/my-digita-hub/2025-11-01-22-49-my-digita-hub-note/</link>
+      <link>http://localhost:1313/posts/my-digita-hub/2025-11-01-22-49-my-digita-hub-note/</link>
       <pubDate>Sat, 01 Nov 2025 22:49:22 +0800</pubDate>
-      <guid>https://law.xuufaa.com/posts/my-digita-hub/2025-11-01-22-49-my-digita-hub-note/</guid>
+      <guid>http://localhost:1313/posts/my-digita-hub/2025-11-01-22-49-my-digita-hub-note/</guid>
       <description>简短说明，如：万圣节看精要整理</description>
     </item>
   </channel>
