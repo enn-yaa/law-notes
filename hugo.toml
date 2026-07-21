@@ -2,169 +2,43 @@ baseURL = "https://law.xuufaa.com/"
 languageCode = "zh-cn"
 title = "xuufaa· 博客"
 theme = "PaperMod"
+
 enableRobotsTXT = true
 hasCJKLanguage = true
 
 [pagination]
-  pagerSize = 10
+pagerSize = 10
 
 [params]
-  # ---- 基础信息 ----
-  title = "xuufaa"
-  description = "专注于法考笔记、真题解析、法律思维图谱整理"
-  defaultTheme = "auto"  # 支持自动切换深浅模式
-  disableThemeToggle = false
-  ShowReadingTime = true
-  ShowBreadCrumbs = true
-  ShowPostNavLinks = true
-  ShowToc = true
-  comments = false
-  ShowShareButtons = false
-  ShowCodeCopyButtons = true
+defaultTheme = "auto"
+disableThemeToggle = false
 
-  # ---- 首页内容控制 ----
-  homeFullContent = false        # 首页仅显示摘要
-  ShowAllPostsOnHome = true      # 显示所有文章
-  paginate = 10                  # 首页显示 10 篇
-  ShowPostSummary = true         # 显示摘要而非全文
+ShowReadingTime = true
+ShowBreadCrumbs = true
+ShowPostNavLinks = true
+ShowToc = true
 
-  # ---- 首页标题文字 ----
-  [params.homeInfoParams]
-    Title = "📚 最近更新的博客"
-    Content = "以下为最近更新的 10 篇博客内容，涵盖民法、刑法、诉讼法、商经知、理论法等主要模块。"
+comments = false
+ShowShareButtons = false
+ShowCodeCopyButtons = true
 
-  # ---- 搜索功能 ----
-  [params.search]
-    enabled = true
-    engine = "fuse"               # 支持 fuse 或 lunr
-    placeholder = "搜索博客内容…"
+homeFullContent = false
+ShowPostSummary = true
 
-  # ---- 页脚 ----
-  [params.footer]
-    enable = true
-    author = "xuufaa"
-    text = "© 2025–2026 · CC BY-NC-SA 4.0 "
-    position = "center"
+[params.homeInfoParams]
+Title = "📚 最近更新的博客"
+Content = "以下为最近更新的博客内容，涵盖民法、刑法、诉讼法、商经知、理论法等主要模块。"
 
-  # ---- 图标 ----
-  [params.assets]
-    favicon = "favicon.ico"
-    customCSS = ["css/custom.css"]
-  # ---- 个人信息卡（禁用） ----
-  [params.profileMode]
-    enabled = false
+[params.assets]
+favicon = "favicon.ico"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
-  page = ["HTML"]
+home = ["HTML", "RSS", "JSON"]
+page = ["HTML"]
 
 [markup]
-  [markup.highlight]
-    style = "dracula"
-  [markup.goldmark.renderer]
-    unsafe = true
+[markup.highlight]
+style = "dracula"
 
-
-### 一级导航 ###
-
-[[menu.main]]
-  name = "首页"
-  url = "/"
-  weight = 1
-
-[[menu.main]]
-name = "搜索"
-  url = "/search/"
-  weight = 2
-
-[[menu.main]]
-  name = "法考"
-  identifier = "law"
-  url = "/law/"
-  weight = 3
-  [[menu.main]]
-    name = "标签"
-    url = "/tags/"
-    weight = 4
-
-  [[menu.main]]
-    name = "图书推荐"
-    url = "/posts/books/"
-    weight = 5
-
- [[menu.main]]
-    name = "My Digital Hub"
-    url = "/posts/my-digital-hub/"
-    weight = 6
-
-  [[menu.main]]
-    name = "关于"
-    url = "/about/"
-    weight = 7
-
-### 二级导航（法考下属） ###
-  [[menu.main]]
-    parent = "law"
-    name = "民法"
-    url = "/posts/civil/"
-    weight = 1
-
-  [[menu.main]]
-    parent = "law"
-    name = "刑法"
-    url = "/posts/criminal/"
-    weight = 2
-
-  [[menu.main]]
-    parent = "law"
-    name = "行政法"
-    url = "/posts/admin/"
-    weight = 3
-
-  [[menu.main]]
-    parent = "law"
-    name = "民诉法"
-    url = "/posts/civil-procedure/"
-    weight = 4
-
-  [[menu.main]]
-    parent = "law"
-    name = "刑诉法"
-    url = "/posts/criminal-procedure/"
-    weight = 5
-
-  [[menu.main]]
-    parent = "law"
-    name = "商经知"
-    url = "/posts/commercial/"
-    weight = 6
-
-  [[menu.main]]
-    parent = "law"
-    name = "理论法"
-    url = "/posts/theory/"
-    weight = 7
-
-  [[menu.main]]
-    parent = "law"
-    name = "国际法"
-    url = "/posts/international/"
-    weight = 8
-
-  [[menu.main]]
-    parent = "law"
-    name = "PDF资料库 📂"
-    url = "/posts/pdfs-truepaper/"
-    weight = 9
-
-  [[menu.main]]
-    parent = "law"
-    name = "其他课程 📘"
-    url = "/posts/others-courses/"
-    weight = 10
-
-baseURL = "https://law.xuufaa.com/"
-languageCode = "zh-cn"
-title = "博客 · law"
-theme = "PaperMod"
-
+[markup.goldmark.renderer]
+unsafe = true

@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>法考笔记 · Enn-Yaa on xuufaa· 博客</title>
-    <link>https://law.xuufaa.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in 法考笔记 · Enn-Yaa on xuufaa· 博客</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 01 Nov 2025 22:49:22 +0800</lastBuildDate>
-    <atom:link href="https://law.xuufaa.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>万圣节看</title>
-      <link>https://law.xuufaa.com/posts/my-digita-hub/2025-11-01-22-49-my-digita-hub-note/</link>
+      <link>http://localhost:1313/posts/my-digita-hub/2025-11-01-22-49-my-digita-hub-note/</link>
       <pubDate>Sat, 01 Nov 2025 22:49:22 +0800</pubDate>
-      <guid>https://law.xuufaa.com/posts/my-digita-hub/2025-11-01-22-49-my-digita-hub-note/</guid>
+      <guid>http://localhost:1313/posts/my-digita-hub/2025-11-01-22-49-my-digita-hub-note/</guid>
       <description>简短说明，如：万圣节看精要整理</description>
     </item>
     <item>
       <title>写一篇法考日记-万圣节🎃</title>
-      <link>https://law.xuufaa.com/posts/others-courses/20251101-2231-others-courses-post/</link>
+      <link>http://localhost:1313/posts/others-courses/20251101-2231-others-courses-post/</link>
       <pubDate>Sat, 01 Nov 2025 22:31:38 +0800</pubDate>
-      <guid>https://law.xuufaa.com/posts/others-courses/20251101-2231-others-courses-post/</guid>
+      <guid>http://localhost:1313/posts/others-courses/20251101-2231-others-courses-post/</guid>
       <description>简短说明，如：写一篇法考日记-万圣节🎃精要整理</description>
     </item>
     <item>
       <title>黄金伯莉《蛛网资本主义》赢得 2023 年霍金斯奖</title>
-      <link>https://law.xuufaa.com/posts/books/20251030books/</link>
+      <link>http://localhost:1313/posts/books/20251030books/</link>
       <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://law.xuufaa.com/posts/books/20251030books/</guid>
+      <guid>http://localhost:1313/posts/books/20251030books/</guid>
       <description>&lt;p&gt;【简讯】芝加哥大学社会学副教授、芝大全球研究主任 &lt;strong&gt;黄金伯莉&lt;/strong&gt;（Kimberly Kay Hoang）凭借《蛛网资本主义：全球精英如何利用前沿市场》（&lt;em&gt;Spiderweb Capitalism: How Global Elites Exploit Frontier Markets&lt;/em&gt;）荣获美国出版商协会颁发的第 47 届 &lt;strong&gt;雷·罗·霍金斯奖&lt;/strong&gt;。&lt;br&gt;
 该书由普林斯顿大学出版社 2022 年 9 月出版，作者通过对私人理财顾问、基金经理、企业家、CEO、银行家、审计师等数百次访谈，揭示超级富豪借助离岸工具网掩盖巨额财富的影子经济，以及由此引发的道德困境。&lt;/p&gt;</description>
     </item>
     <item>
       <title>李建伟《公司法600问（上下册）》笔记</title>
-      <link>https://law.xuufaa.com/posts/commercial/gsf600/</link>
+      <link>http://localhost:1313/posts/commercial/gsf600/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://law.xuufaa.com/posts/commercial/gsf600/</guid>
+      <guid>http://localhost:1313/posts/commercial/gsf600/</guid>
       <description>李建伟老师以企业家、商人、律师三重身份，深入剖析公司法运行逻辑，展现实践与规范之间的商事智慧。</description>
     </item>
     <item>
       <title>民法示例笔记</title>
-      <link>https://law.xuufaa.com/posts/civil/%E6%B0%91%E6%B3%95%E7%A4%BA%E4%BE%8B2/</link>
+      <link>http://localhost:1313/posts/civil/%E6%B0%91%E6%B3%95%E7%A4%BA%E4%BE%8B2/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://law.xuufaa.com/posts/civil/%E6%B0%91%E6%B3%95%E7%A4%BA%E4%BE%8B2/</guid>
+      <guid>http://localhost:1313/posts/civil/%E6%B0%91%E6%B3%95%E7%A4%BA%E4%BE%8B2/</guid>
       <description>&lt;p&gt;这是第一篇民法笔记的示例内容。&lt;/p&gt;</description>
     </item>
     <item>
       <title>关于</title>
-      <link>https://law.xuufaa.com/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://law.xuufaa.com/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;博观而约取，厚积而薄发。&lt;/p&gt;
 &lt;p&gt;这里是法考笔记，记录学习过程中的知识点与心得。&lt;/p&gt;</description>
     </item>
