@@ -31,7 +31,7 @@ ShowPostSummary = true
 
 
 [params.homeInfoParams]
-Title = "📚 xuufaa 法考笔记"
+Title = "**📚 xuufaa 博客**"
 
 Content = """
 专注于法律职业资格考试学习资料整理。
@@ -49,12 +49,12 @@ Content = """
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/xuufaa"
+url = "https://github.com/enn-yaa/"
 
 
 [[params.socialIcons]]
-name = "rss"
-url = "/index.xml"
+name = "email 📮"
+url = "law@xuufaa.com"
 
 
 
