@@ -73,9 +73,9 @@ page = ["HTML"]
 style = "dracula"
 
 
-[markup.goldmark.renderer]
-unsafe = true
-
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
 
 
 # ======================
